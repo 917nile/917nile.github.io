@@ -1,2 +1,179 @@
-<h1> why hello there </h1>
-<p> this is a website for 917 Nile St. Website is still underconstruction, but we'll be seeing you shortly :) </p> 
+
+<html>
+<head>
+<title><?php echo $current['page_title'];?></title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="../club.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+body {
+  margin: 0; 
+}f
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  color: hotpink;
+}
+
+main {
+  background-image: url("extravaganza.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+#leftArrow{
+	position:relative;
+	float:left;
+}
+
+#rightArrow{
+	position:relative;
+	float:right;
+}
+
+#archive{
+	position: absolute;
+	margin-left: 50%;
+}
+
+#navbar	{
+}
+
+.bg-text {
+  background-color: rgba(0,0,0, 0.7);
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  border: 1px solid #f1f1f1;
+  position: fixed; 
+  top: 20%;
+  right: 0%;
+  z-index: 2;
+  padding: 5px;
+  text-align: left;
+}
+
+.quotecard-left {
+  margin: 30vh 30vw 20px 0;
+  left: 5%;
+  color: white;
+  font-size:1.3em;
+  font-weight:350;
+  text-align: left;
+  background-color: rgba(25,150,25,0.7); 
+  z-index: 1; 
+
+}
+
+
+
+.bigtext {
+font-family: plantin-condensed, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 2.2em;
+}
+.introtext {
+font-family: plantin, sans-serif;
+font-weight: 500;
+font-style: italic;
+font-size: 1.2em;
+}
+.time {
+  font-family: plantin, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.place {
+  font-family: plantin, sans-serif;
+  font-weight: 400;
+  font-size: 14px; 
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="navbar">
+	<?php
+	require_once "../navbar.php";
+	?>
+</div>
+
+<!--
+<div class="bg-image img">
+</div>
+
+<div class="bg-image img1">
+  <div class="quotecard-left"><br><br>Man suffers only because he takes seriously what the gods made for fun.</div>     
+</div>
+
+<div class="bg-image img2">
+  <div class="quotecard-right">This is the real secret of life — to be completely engaged with what you are doing in the here and now. And instead of calling it work, realize it is play.</div>     
+</div>
+
+<div class="bg-image img3">
+  <div class="quotecard-left">The meaning of life is just to be alive. It is so plain and so obvious and so simple. And yet, everybody rushes around in a great panic as if it were necessary to achieve something beyond themselves.</div>     
+</div>
+<div class="bg-image img4">
+  <div class="quotecard-right">The only way to make sense out of change is to plunge into it, move with it, and join the dance.</div>     
+</div>
+<div class="bg-image img5">
+  <div class="quotecard-left">Life is like music for its own sake. We are living in an eternal now, and when we listen to music we are not listening to the past, we are not listening to the future, we are listening to an expanded present.</div>     
+</div>
+</-->
+
+<main>
+
+<div class="bg-text">
+    <h1 class="introtext">
+      Nile Industries proudly presents:
+    </h1>
+    <h1 class="bigtext">
+A Charlie Brown <br> Xmas Extravaganza
+    </h1>
+    <h1 class="time">
+      Dec 11th 9PM-Late
+    </h1>
+    <h1 class ="place">
+      917 Nile St. <br>
+      Austin, TX 78702
+    </h1>
+
+   <br> </div>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="quotecard-left">A celebration of life,  holiday cheer, and the Peanuts universe.<br><img src="office_dance.gif">
+</div>
+
+  <div class="quotecard-left">DEC 11th is a day to gather and celebrate the Charlie Brown Christmas in all of us. Come prepared to bask in the revelry of a night filled with drinks, holiday treats, and general debauchery.<br><<img src="xmas_bull.gif"></div>
+
+  <div class="quotecard-left">We plan on going hard and going late. BRING YOUR FAMILY AND YOUR ALCOHOL, YOUR OUTFITS AND YOUR MIRTH. Y'all we getting down!<br><img src="disco.jpg"></div>     
+
+  <div class="quotecard-left">We expect on seeing you after you leave your lack luster work party. <br><img src="xmas_sweater.gif"></div>     
+
+
+
+  <div class="quotecard-left"><img src="xmas_chics.gif"></div>
+
+  <div class="quotecard-left"><img src="xmas_suit.gif"></div>
+
+</main>
+</body>
+</html>
