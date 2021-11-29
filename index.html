@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 
+
+#content-desktop { display: block; }
+#content-mobile { display: none; } 
+
+/* Smartphones ----------- */
+@media screen and (max-width: 768px) {
+  #content-desktop { display: none; }
+  #content-mobile { display: block; } 
+}
+
+
 body {
   margin: 0; 
 }f
@@ -113,28 +124,6 @@ font-size: 1.2em;
 	?>
 </div>
 
-<!--
-<div class="bg-image img">
-</div>
-
-<div class="bg-image img1">
-  <div class="quotecard-left"><br><br>Man suffers only because he takes seriously what the gods made for fun.</div>     
-</div>
-
-<div class="bg-image img2">
-  <div class="quotecard-right">This is the real secret of life — to be completely engaged with what you are doing in the here and now. And instead of calling it work, realize it is play.</div>     
-</div>
-
-<div class="bg-image img3">
-  <div class="quotecard-left">The meaning of life is just to be alive. It is so plain and so obvious and so simple. And yet, everybody rushes around in a great panic as if it were necessary to achieve something beyond themselves.</div>     
-</div>
-<div class="bg-image img4">
-  <div class="quotecard-right">The only way to make sense out of change is to plunge into it, move with it, and join the dance.</div>     
-</div>
-<div class="bg-image img5">
-  <div class="quotecard-left">Life is like music for its own sake. We are living in an eternal now, and when we listen to music we are not listening to the past, we are not listening to the future, we are listening to an expanded present.</div>     
-</div>
-</-->
 
 <main>
 
@@ -153,11 +142,21 @@ The first annual <br> Xmas Extravaganza
       Austin, TX 78702
     </h1>
     
-    <b>Please RSVP in the form below. </b> <br>
+    <div id="content-desktop">
+    Please RSVP with the form below <br>
+    </div> 
     
+    <div id="content-mobile">
+    The full website is not displayed <br>
+    since you are using a mobile device. <br> 
+    Please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0lo0icFYD7lHEEGQVQzYiCNBHBAWVQE5isEAbSiivZd0Q5g/viewform?usp=sf_link">link</a> to RSVP</a><br>
+    </div> 
+
     <img src="nile-logo.gif">
    <br> </div>
  
+ 
+ <div id="content-desktop"> 
   <br>
   <br>
   <br>
@@ -191,6 +190,7 @@ The first annual <br> Xmas Extravaganza
 
   <div class="quotecard-left-green">
   	RSVP below on our Google form! <br>
+  	Note: Website not formatted for mobile. <br> 
   	<img src="xmas_sweater.gif">
   </div>     
 
@@ -217,6 +217,8 @@ The first annual <br> Xmas Extravaganza
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0lo0icFYD7lHEEGQVQzYiCNBHBAWVQE5isEAbSiivZd0Q5g/viewform?embedded=true" width="640" height="1114" frameborder="0" marginheight="0" marginwidth="0">RSVP Here</iframe>
       </center>
   
+  
+  </div>
 </main>
 </body>
 </html>
