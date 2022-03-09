@@ -6,12 +6,39 @@
 <style type="text/css">
 
 
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+  border: 2px solid #000;
+  width: auto;
+  height: 100%;
+  position: center;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+
 body {
   margin: 0; 
   background-color: black;
 
 }
 
+/*
 img {
   max-height: 100vh;
 }
@@ -42,27 +69,45 @@ img {
   transform: translate(-50%, -40%);
 }
 
+*/
+
 a {
   color: white; 
-}
+} 
 
 </style>
 </head>
 
+
 <body>
+  <div class="video-wrapper">
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="kody.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="header">
+      <h1>Celebrating spring</h1>
+      March 19th 9PM-Late <br> 
+      917 Nile St <br>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRCe4wB4-bR0Osmrn_3a-9c8mRII7nR9nNu_pK6ronhyJ1dw/viewform?usp=sf_link">RSVP</a><br>
+    </div>
+  </div>
+</body>
+
+
+<!-- <body>
   <div class="imageContainer">
     <img src="promo.gif"> 
 
     <div class="caption centerbot">
         Celebrating spring <br> 
         <div class="captionsmall">
-          March 19th 9PM-Late <br> 
-          917 Nile St <br>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRCe4wB4-bR0Osmrn_3a-9c8mRII7nR9nNu_pK6ronhyJ1dw/viewform?usp=sf_link">RSVP</a><br>
+
    
         </div>
     </div>
  </div>
-</body>
+</body> -->
 
 </html>
