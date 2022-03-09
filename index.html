@@ -5,206 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 
-/* Desktop ----------- */
-#content-desktop { display: block; }
-#content-mobile { display: none; } 
-
-/* Smartphones ----------- */
-@media screen and (max-width: 768px) {
-  #content-desktop { display: none; }
-  #content-mobile { display: block; } 
-}
-
 
 body {
   margin: 0; 
+  background-color: black;
+
 }
 
-img {
-  vertical-align: bottom;
-  max-width: 100%;
+.imageContainer {
+  position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, 0%);
+}
+
+.caption {
+  color: white; 
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+.captionsmall {
+  font-size: 15px;
+}
+
+.centerbot {
+  width: auto;
+  position: absolute;
+  top: 60%;
+  left: 50%; 
+  transform: translate(-50%, -30%);
 }
 
 a {
-  color: hotpink;
-}
-
-main {
-  background-image: url("extravaganza.png");
-  background-repeat: repeat-y;
-  background-size: 100% auto;
-}
-
-#leftArrow{
-	position:relative;
-	float:left;
-}
-
-#rightArrow{
-	position:relative;
-	float:right;
-}
-
-#archive{
-	position: absolute;
-	margin-left: 50%;
-}
-
-#navbar	{
-}
-
-.bg-text {
-  background-color: rgba(0,0,0, 0.7);
-  color: white;
-  font-weight: bold;
-  font-size: 10px;
-  border: 1px solid #f1f1f1;
-  position: fixed; 
-  top: 20%;
-  right: 0%;
-  z-index: 2;
-  padding: 5px;
-  text-align: left;
-}
-
-.quotecard-left-green {
-  margin: 40vh 40vw 20px 0;
-  left: 5%;
-  color: white;
-  font-size:1.2em;
-  font-weight:350;
-  text-align: left;
-
-  background-color: rgba(25,150,25,0.7); 
-  padding: 5px;
-  z-index: 1; 
-}
-
-
-.bigtext {
-font-family: plantin-condensed, sans-serif;
-font-weight: 600;
-font-style: normal;
-font-size: 2.2em;
-}
-.introtext {
-font-family: plantin, sans-serif;
-font-weight: 500;
-font-style: italic;
-font-size: 1.2em;
-}
-.time {
-  font-family: plantin, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-.place {
-  font-family: plantin, sans-serif;
-  font-weight: 400;
-  font-size: 14px; 
+  color: white; 
 }
 
 </style>
 </head>
 
 <body>
-<main>
+  <div class="imageContainer">
+    <img src="promo.gif"> 
 
-<div class="bg-text">
-
-    <h1 class="introtext">
-      Nile Industries proudly presents: <br> 
-    </h1>
-    <h1 class="bigtext">
-A festival honoring <br> 
-St. Patrick <br> 
-<br>
-A rowdy Carnival <br>
-samba session <br> 
-<br> 
-And a celebration to <br>
-kickoff Texas Spring <br> 
-    </h1>
-    <h1 class="time">
-      March 19th 9PM-Late
-    </h1>
-    <h1 class ="place">
-      917 Nile St. <br>
-      Austin, TX 78702
-    </h1>
-    
-    <div id="content-desktop">
-    Please RSVP with the form below <br>
-    </div> 
-    
-    <div id="content-mobile">
-    Please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRCe4wB4-bR0Osmrn_3a-9c8mRII7nR9nNu_pK6ronhyJ1dw/viewform?usp=sf_link">link</a> to RSVP</a><br>
-    </div> 
-       
-    <img src="nile-logo.gif">
-   <br> 
-
-</div>
- 
- 
-
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-
-	  <div class="quotecard-left-green"> 
-
-	  </div>
-
-
-	  <div class="quotecard-left-green">
-
-	  </div>     
-
-
-	  <div class="quotecard-left-green">
-
-	  </div>
-
-	  <div class="quotecard-left-green">
-
-    	  </div> 
-       
-
-	  <div class="quotecard-left-green">
-
-	  </div>     
-
-
-	  <div class="quotecard-left-green">
-
-	  </div>     
-	  
-	 <div class="quotecard-left-green">
-
-
-	  </div>     
-	  
-	  
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>  
-    <div id="content-desktop"> 
-  	<center>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRCe4wB4-bR0Osmrn_3a-9c8mRII7nR9nNu_pK6ronhyJ1dw/viewform?embedded=true" width="640" height="1289" frameborder="0" marginheight="0" marginwidth="0">RSVP Here</iframe>
-      	</center>
-  
-  
-  </div>
-</main>
+    <div class="caption centerbot">
+        Celebrating spring <br> 
+        <div class="captionsmall">
+          March 19th 9PM-Late <br> 
+          917 Nile St <br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRCe4wB4-bR0Osmrn_3a-9c8mRII7nR9nNu_pK6ronhyJ1dw/viewform?usp=sf_link">RSVP</a><br>
+   
+        </div>
+    </div>
+ </div>
 </body>
+
 </html>
