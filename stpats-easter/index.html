@@ -26,6 +26,7 @@ video {
   justify-content: center;
 }
 .header{
+  margin-top: 40%;
   position: relative;
   color: white;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
@@ -43,6 +44,39 @@ body {
 
 }
 
+/*
+img {
+  max-height: 100vh;
+}
+
+.imageContainer {
+  position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, 0%);
+}
+
+.caption {
+  color: white; 
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+.captionsmall {
+  font-size: 15px;
+}
+
+.centerbot {
+  width: auto;
+  position: absolute;
+  top: 80%;
+  left: 50%; 
+  transform: translate(-50%, -40%);
+}
+
+*/
+
 a {
   color: white; 
 } 
@@ -52,14 +86,22 @@ a {
 
 
 <body>
+  <div class="video-wrapper">
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="kody.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
     <div class="header">
-      <h1>hi <br>sharon</h1>
+      <h1>st paddys <br>resurrection</h1>
       <br>
       <div class="subheader">
-        May 21st 9PM-Late <br> 
+        March 19th 9PM-Late <br> 
         917 Nile St <br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRCe4wB4-bR0Osmrn_3a-9c8mRII7nR9nNu_pK6ronhyJ1dw/viewform?usp=sf_link">RSVP</a><br>
       </div>
     </div>
+  </div>
 </body>
 
 
