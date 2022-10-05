@@ -1,34 +1,27 @@
 body {
     font-family: 'Creepster', serif;
-    font-size: 40px;
     text-align: center;
     color: orangered;
     background: black;
 }
 
-h2, h3 {
+h2 {
+    font-size: 56px;
     margin-bottom: 5px;
     margin-top: 0px;
     padding-top: 35px;
-}
-
-h3 {
-    font-size: 32px;
-}
-
-marquee {
-    font-size: 14px;
-    line-height: 10px;
-}
-
-#i-dont-remember-how-to-css {
-    margin-bottom: -20px;
 }
 
 h4 {
     line-height: 10px;
     margin: 10px;
     padding: 10px;
+    font-size: 40px;
+}
+
+marquee {
+    font-size: 14px;
+    line-height: 10px;
 }
 
 img {
