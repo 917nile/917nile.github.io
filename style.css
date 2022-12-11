@@ -1,8 +1,8 @@
 body {
-    font-family: 'Creepster', serif;
+    font-family: monospace;
     text-align: center;
-    background: black;
-    color: orangered;
+    background: white;
+    color: black;
 }
 
 h2 {
@@ -21,7 +21,6 @@ h3 {
 h4 {
     margin: 0;
     font-size: 20px;
-    line-height: 0;
 }
 
 marquee {
