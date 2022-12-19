@@ -1,39 +1,54 @@
 body {
     font-family: monospace;
+    font-weight: lighter;
     text-align: center;
-    background: white;
+    background: rgb(124, 255, 92);
     color: black;
 }
 
-h2 {
-    font-size: 46px;
+@font-face {
+    font-family: 'porky';
+    src: url('./PORKYS_.TTF');
+}
+
+h1 {
+    font-size: 52px;
     margin-bottom: 5px;
     margin-top: 0px;
 }
 
 h3 {
-    line-height: 10px;
+    line-height: 4px;
     margin: 10px;
     padding: 10px;
     font-size: 32px;
 }
 
-h4 {
+marquee {
     margin: 0;
     font-size: 20px;
+    font-style: italic;
 }
 
-marquee {
-    color: white;
-    font-size: 14px;
-    line-height: 10px;
+.our-birthday {
+    width: 80%;
+    border: 3px solid black;
 }
 
-img {
-    max-width: 80vw;
+.birthday-text {
+    width: 80%;
+}
+
+.title {
+    max-width: 90vw;
 }
 
 p {
-    font-size: 20px;
-    color: gray;
+    font-size: 16px;
+    color: #555;
+}
+
+.img-container {
+    max-width: 80vw;
+    margin: auto;
 }
