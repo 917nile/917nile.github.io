@@ -31,12 +31,12 @@ marquee {
 }
 
 .our-birthday {
-    width: 80%;
+    width: 100%;
     border: 3px solid black;
 }
 
 .birthday-text {
-    width: 80%;
+    width: 100%;
 }
 
 .title {
@@ -44,7 +44,7 @@ marquee {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
 }
 
