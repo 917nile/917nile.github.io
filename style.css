@@ -43,6 +43,10 @@ marquee {
     max-width: 90vw;
 }
 
+span {
+    font-size: 5vw; 
+}
+
 p {
     font-size: 14px;
     color: #555;
