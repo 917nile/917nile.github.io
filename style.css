@@ -67,3 +67,37 @@ h3 {
         transform: translateX(0);
     }
 }
+
+@keyframes growshrink {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(80%);
+    }
+
+    0% {
+        transform: scale(100%);
+    }
+}
+
+.ari-marquee, .matt-marquee {
+    overflow: visible;
+    position: absolute;
+    top: -50vh;
+    height: 200vh;
+    width: 100vw;
+    left:0px;
+    z-index: -1;
+}
+
+.matt-marquee img, .ari-marquee img {
+    animation: growshrink 2s ease-in-out infinite;
+    width: 200px;
+    max-width: 15vw;
+}
+
+.matt-marquee img {
+    float: right;
+}
