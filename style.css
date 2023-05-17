@@ -14,13 +14,18 @@ p {
     max-width: 90vw;
 }
 
+.bathing-suit {
+    width: 500px;
+    max-width: 90vw;
+}
+
 h3 {
-    color: goldenrod;
+    color: black;
     line-height: 4px;
     margin: 10px;
     padding: 10px;
     font-size: 36px;
-    text-shadow: 0 0 8px black;
+    text-shadow: 0 0 8px goldenrod;
 }
 
 .marquee .marquee-track img {
