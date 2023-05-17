@@ -30,6 +30,11 @@ h3 {
 
 .marquee .marquee-track img {
     height: 300px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 .marquee {
