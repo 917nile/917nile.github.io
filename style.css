@@ -83,10 +83,10 @@ h3 {
 }
 
 .ari-marquee, .matt-marquee {
-    overflow: visible;
+    /* overflow: -moz-hidden-unscrollable; */
     position: absolute;
     top: -50vh;
-    height: 200vh;
+    height: 100vh;
     width: 100vw;
     left:0px;
     z-index: -1;
