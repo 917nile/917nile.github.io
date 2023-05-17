@@ -20,24 +20,38 @@
     <h3>9PM - Late</h3>
     <br>
     <br><br>
-    <marquee class="img-container">
-        <img src="./us/summer10.jpg">
-        <img src="./us/summer11.jpg">
-        <img src="./us/summer12.jpg">
-        <img src="./us/summer13.jpg">
-        <img src="./us/summer14.jpg">
-        <img src="./us/summer1.jpg">
-        <img src="./us/summer2.jpg">
-        <img src="./us/summer3.jpg">
-        <img src="./us/summer4.jpg">
-        <img src="./us/summer5.jpg">
-        <img src="./us/summer6.jpg">
-        <img src="./us/summer7.jpg">
-        <img src="./us/summer8.jpg">
-        <img src="./us/summer9.jpg">
-    </marquee>
+
+    <div class="marquee">
+        <div class="marquee-track" id="js-marquee-track"></div>
+    </div>
+
     <br>
-    <p>A 917Nile Industries & Sons™ production | © Copyright 2022</p>
+    <p>A 917Nile Industries & Sons™ production</p>
 </body>
 
 </html>
+
+<script>
+    const track = document.getElementById('js-marquee-track');
+
+    const NUM_IMAGES = 15;
+    const indexes = randomIndexes(NUM_IMAGES);
+    // repeat images twice
+    for(let j = 0; j < 2; j++) {
+        indexes.map(i => {
+            const img = document.createElement('img');
+            img.setAttribute('src', `./us/summer${i}.jpg`);
+            track.appendChild(img);
+        });
+    }
+
+    function randomIndexes(length) {
+        const res = [];
+        for(var i = 0; i < length; i++) {
+            const rand = Math.floor(Math.random()*(i+1));
+            res.splice(rand, 0, i);
+        }
+
+        return res;
+    }
+</script>
