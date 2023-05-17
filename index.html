@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthdayween</title>
+    <title>Summerween</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Creepster">
     <link rel="stylesheet" href="style.css">
-    <script src="friendheads.js"></script>
     <meta property="og:image" content="./og.png" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -16,18 +15,43 @@
 <body>
     <p>917Nile Industries & Sons™ presents...</p>
     <img src="./text.gif" class="title"/>
-    <h3>Sat Jan 14</h3>
+    <h3>Sat June 3</h3>
     <h3>917 Nile St</h3>
     <h3>9PM - Late</h3>
     <br>
-    <marquee>Beats by DJ Airplane Mode</marquee>
     <br><br>
-    <div class="img-container">
-        <img src="./lol.gif" class="birthday-text"/>
-        <img src="./bday2.jpg" class="our-birthday"/>
+
+    <div class="marquee">
+        <div class="marquee-track" id="js-marquee-track"></div>
     </div>
+
     <br>
-    <p>A 917Nile Industries & Sons™ production | © Copyright 2022</p>
+    <p>A 917Nile Industries & Sons™ production</p>
 </body>
 
 </html>
+
+<script>
+    const track = document.getElementById('js-marquee-track');
+
+    const NUM_IMAGES = 15;
+    const indexes = randomIndexes(NUM_IMAGES);
+    // repeat images twice
+    for(let j = 0; j < 2; j++) {
+        indexes.map(i => {
+            const img = document.createElement('img');
+            img.setAttribute('src', `./us/summer${i}.jpg`);
+            track.appendChild(img);
+        });
+    }
+
+    function randomIndexes(length) {
+        const res = [];
+        for(var i = 0; i < length; i++) {
+            const rand = Math.floor(Math.random()*(i+1));
+            res.splice(rand, 0, i);
+        }
+
+        return res;
+    }
+</script>

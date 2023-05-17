@@ -1,58 +1,59 @@
 body {
+    background: skyblue;
+    text-align: center;
     font-family: monospace;
     font-weight: lighter;
-    text-align: center;
-    background: rgb(124, 255, 92);
+    margin: 10px 0px;
+}
+
+p {
     color: black;
-}
-
-@font-face {
-    font-family: 'porky';
-    src: url('./PORKYS_.TTF');
-}
-
-h1 {
-    font-size: 52px;
-    margin-bottom: 5px;
-    margin-top: 0px;
-}
-
-h3 {
-    line-height: 4px;
-    margin: 10px;
-    padding: 10px;
-    font-size: 32px;
-}
-
-marquee {
-    margin: 0;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.our-birthday {
-    width: 100%;
-    border: 3px solid black;
-}
-
-.birthday-text {
-    width: 100%;
 }
 
 .title {
     max-width: 90vw;
 }
 
-span {
-    font-size: 5vw; 
+h3 {
+    color: goldenrod;
+    line-height: 4px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 36px;
+    text-shadow: 0 0 8px black;
 }
 
-p {
-    font-size: 14px;
-    color: #555;
+.marquee .marquee-track img {
+    height: 300px;
 }
 
-.img-container {
-    max-width: 80vw;
-    margin: auto;
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+    box-shadow: 0 0 30px goldenrod;
+}
+
+.marquee-track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 200s linear infinite;
+    width: 5000px; /* evil hard-coded value, slightly larger than width of one iteration */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    0% {
+        transform: translateX(0);
+    }
 }
